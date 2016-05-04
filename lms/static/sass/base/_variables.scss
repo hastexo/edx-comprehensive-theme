@@ -1,28 +1,31 @@
 @import 'lms/static/sass/partials/base/variables';
 
-// Fonts
-$sans-serif: 'Open Sans', $verdana, sans-serif;
-$serif: $georgia;
-$header-sans-serif: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-$f-sans-serif: 'Open Sans','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$f-serif: 'Bree Serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+// Import hastexo color palette
+@import 'hastexo-colors';
+
+$sans-serif: 'Open Sans', sans-serif;
+$serif: $sans-serif;
+$header-sans-serif: $sans-serif;
+$f-sans-serif: $sans-serif;
+$f-serif: $sans-serif;
+$body-font-family: $sans-serif !important;
 
 // Colors
-$action-primary-bg: $m-blue-d3;
-$action-primary-shadow: $m-blue-d4;
-$action-primary-focused-bg: $m-blue-d1;
-$action-primary-active-bg: $m-blue;
-$action-primary-active-shadow: $m-blue-d2;
-$link-color: $uxpl-blue-base;
-$link-color-d1: $link-color;
-$link-hover: $uxpl-blue-hover-active;
-$button-color: $uxpl-blue-base;
+$action-primary-bg: $hastexo-blue-light;
+$action-primary-shadow: $hastexo-blue-dark;
+$action-primary-focused-bg: $hastexo-blue-dark;
+$action-primary-active-bg: $hastexo-blue-dark;
+$action-primary-active-shadow: $hastexo-blue-dark;
+$link-color: $hastexo-blue-light;
+$link-color-d1: $hastexo-blue-light;
+$link-hover: $hastexo-blue-dark;
+$button-color: $hastexo-blue-dark;
 
 // Header
-$header-bg: $white;
+$header-bg: $hastexo-grey-medium;
 
 // Body
-$homepage-bg-image: url('#{$static-path}/images/banner.jpg');
+$homepage-bg-image: url('#{$static-path}/images/banner.png');
 
 // Footer
-$footer-bg: $white;
+$footer-bg: $hastexo-grey-dark;

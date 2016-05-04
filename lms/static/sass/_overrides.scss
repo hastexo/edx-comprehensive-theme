@@ -24,3 +24,125 @@
     box-shadow: .5em .5em .5em black;
   }
 }
+
+body, p, label {
+    font-family: $sans-serif;
+}
+
+// General page setup
+html {
+  background-color: $hastexo-grey-dark !important;
+}
+
+// Logos
+.logo,
+.wrapper-logo {
+  img {
+    max-height: 50px;
+  }
+}
+
+// Header and footer
+.wrapper-footer {
+  margin-top: 0px !important;
+}
+
+.header-global {
+  .nav-global {
+    li a, div a {
+      color: white;
+    }
+  }
+
+  .user {
+    .user-link {
+      border-radius: 2px;
+      color: white;
+      text-shadow: 2px 0 0 $hastexo-grey-medium, -2px 0 0 $hastexo-grey-medium, 0 2px 0 $hastexo-grey-medium, 0 -2px 0 $hastexo-grey-medium, 1px 1px $hastexo-grey-medium, -1px -1px $hastexo-grey-medium, 1px -1px $hastexo-grey-medium, -1px 1px $hastexo-grey-medium;
+      box-shadow: none;
+    }
+  }
+}
+
+.header-global.slim {
+  background: $hastexo-grey-medium !important;
+
+  h2 {
+    color: white !important;
+    text-shadow: none !important;
+  }
+}
+
+.home {
+  background-color: $hastexo-grey-medium;
+
+  > header {
+    background-attachment: fixed;
+    background-color: $hastexo-grey-light;
+
+    .outer-wrapper {
+      animation: none !important;
+    }
+
+    .title {
+      background: none !important;
+      > .heading-group {
+        padding-bottom: 0;
+
+        h1 {
+          text-transform: none !important;
+          color: white;
+          text-shadow: 2px 2px black !important;
+          font-weight: bold;
+          font-size: 500%;
+        }
+
+        h2 {
+          text-transform: none !important;
+          color: white;
+          text-shadow: 2px 2px black !important;
+          font-size: 200%;
+	  font-weight: bold;
+	  font-style: italic;
+        }
+
+        p {
+          text-transform: none !important;
+          color: white;
+          text-shadow: 2px 2px black !important;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          line-height: 130%;
+	  font-size: 100%;
+	  font-style: normal;
+	  font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.course-content {
+  .sequence {
+    .path {
+      font-family: $sans-serif;
+    }
+  }
+}
+
+
+.course-tabs {
+  li {
+    a {
+      font-family: $sans-serif;
+    }
+  }
+}
+
+.course-navigation {
+  .button-chapter {
+    .group-heading {
+      font-family: $sans-serif;
+    }
+  }
+}

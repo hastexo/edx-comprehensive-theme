@@ -17,8 +17,11 @@ from openedx.core.djangolib.markup import HTML, Text
               % if homepage_overlay_html:
                 ${homepage_overlay_html | n, decode.utf8}
               % else:
-                <h1>Platform name</h1>
-                <h2>Blurb here.</h2>
+                <h1>Real technology.</h1>
+                <h2>Brought to you by real experts.</h2>
+                <p>At hastexo Academy, you learn about advanced
+                technology, on real live systems, guided by first-rate
+                experts in the field.</p>
               % endif
           </div>
           % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
