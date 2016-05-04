@@ -1,28 +1,59 @@
 @import 'lms/static/sass/partials/base/variables';
 
-// Fonts
-$sans-serif: 'Open Sans', $verdana, sans-serif;
-$serif: $georgia;
-$header-sans-serif: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-$f-sans-serif: 'Open Sans','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$f-serif: 'Bree Serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+// Import external fonts
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
 
-// Colors
-$action-primary-bg: $m-blue-d3;
-$action-primary-shadow: $m-blue-d4;
-$action-primary-focused-bg: $m-blue-d1;
-$action-primary-active-bg: $m-blue;
-$action-primary-active-shadow: $m-blue-d2;
-$link-color: $uxpl-blue-base;
-$link-color-d1: $link-color;
-$link-hover: $uxpl-blue-hover-active;
-$button-color: $uxpl-blue-base;
+// Import SUSE color palette
+@import 'suse-colors';
+
+$sans-serif: 'Roboto', sans-serif !important;
+$monospace: Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', monospace !default;
+$body-font-family: $sans-serif !important;
+$serif: 'Montserrat', serif !important;
+
+// newer variables/standards
+$f-serif: $serif;
+$f-sans-serif: $sans-serif;
+$f-monospace: $monospace;
+
+$m-blue: $pms-274u;
+$m-blue-l1: lighten($m-blue, 2%);
+$m-blue-l2: lighten($m-blue, 4%);
+$m-blue-l3: lighten($m-blue, 6%);
+$m-blue-l4: lighten($m-blue, 8%);
+$m-blue-l5: lighten($m-blue, 10%);
+$m-blue-l6: lighten($m-blue, 12%);
+$m-blue-d1: darken($m-blue, 2%);
+$m-blue-d2: darken($m-blue, 4%);
+$m-blue-d3: darken($m-blue, 6%);
+$m-blue-d4: darken($m-blue, 8%);
+$m-blue-d5: darken($m-blue, 10%);
+$m-blue-d6: darken($m-blue, 12%);
+$m-blue-t0: rgba($m-blue,0.125);
+$m-blue-t1: rgba($m-blue,0.25);
+$m-blue-t2: rgba($m-blue,0.50);
+$m-blue-t3: rgba($m-blue,0.75);
+
+$base-font-color: $pms-2955u;
+
+// actions - misc
+$action-primary-bg: $pms-7480u;
+$action-primary-shadow: $pms-7488u;
+$action-primary-focused-bg: $pms-7488u;
+$action-primary-active-bg: $pms-7488u;
+$action-primary-active-shadow: $pms-7488u;
+$link-color: $pms-7480u;
+$link-color-d1: $pms-7480u;
+$link-hover: $pms-7488u;
+$button-color: $pms-7488u;
 
 // Header
 $header-bg: $white;
+$header-sans-serif: $sans-serif;
 
 // Body
 $homepage-bg-image: url('#{$static-path}/images/banner.jpg');
 
 // Footer
-$footer-bg: $white;
+$footer-bg: #202020;

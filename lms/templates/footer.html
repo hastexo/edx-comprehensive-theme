@@ -18,7 +18,7 @@
     % endif
   >
     <div class="colophon">
-      <p class="copyright">${footer['copyright']}</p>
+      <p class="copyright">&copy; 2016 SUSE LLC. All Rights Reserved. SUSE and the SUSE logo are registered trademarks of SUSE LLC in the United States and other countries. All third-party trademarks are the property of their respective owners.</p>
     </div>
 
     ## Please leave this link and use one of the logos provided
@@ -28,8 +28,8 @@
     % if not hide_openedx_link:
     <div class="footer-about-openedx">
       <p>
-        <a href="${footer['openedx_link']['url']}">
-          <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+        <a href="https://open.edx.org/">
+          <img src="${static.url('images/openedx-logo-tag-dark.svg')}" alt="Open edX logo" width="140" />
         </a>
       </p>
     </div>
