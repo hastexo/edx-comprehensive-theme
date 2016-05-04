@@ -24,3 +24,62 @@
     box-shadow: .5em .5em .5em black;
   }
 }
+
+// Font overrides
+body,
+p,
+label,
+.course-content .sequence .path,
+.course-tabs li a,
+.course-navigation .button-chapter .group-heading {
+  font-family: $sans-serif;
+}
+
+.courseware-bookmarks-button .bookmarks-list-button {
+  font-size: 13px !important;
+}
+
+// Link color overrides
+p,
+.info-wrapper .handouts {
+  a {
+    color: $link-color !important;
+    &:hover { color: $link-hover !important; }
+  }
+}
+
+.home {
+  > header {
+    .outer-wrapper {
+      animation: none !important;
+    }
+
+    .title {
+      background: none !important;
+      > .heading-group {
+        h1 {
+          text-transform: none !important;
+          color: white;
+          text-shadow: 0 1px $dark-green !important;
+          font-weight: bold;
+        }
+
+        h2 {
+          text-transform: none !important;
+          color: white;
+          text-shadow: 0 1px $dark-green !important;
+        }
+      }
+    }
+  }
+}
+
+// Remove border around SUSE logos
+.course-info .course-profile .intro-inner-wrapper .media .hero {
+  border: none !important;
+}
+
+.dashboard .my-courses .course .details .wrapper-course-image .cover {
+  border: none !important;
+  border-bottom: none !important;
+}
