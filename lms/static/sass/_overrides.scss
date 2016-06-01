@@ -20,4 +20,55 @@
     margin-bottom: 1em;
     box-shadow: .5em .5em .5em black;
   }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.header-global {
+  .nav-global {
+    li a, div a {
+      color: white !important;
+    }
+  }
+
+  .user .user-link {
+    color: white !important;
+  }
+}
+
+.home > header {
+  .outer-wrapper {
+    animation: none !important;
+  }
+
+  .title {
+    background: none !important;
+    > .heading-group {
+      display: block !important;
+      margin-bottom: 120px !important;
+      text-align: center !important;
+
+      h1 {
+        text-transform: none !important;
+        color: white;
+        text-shadow: 0 1px $dark-green !important;
+        font-weight: bold;
+        margin-bottom: 24px !important;
+        text-align: center !important;
+      }
+
+      h2 {
+        text-transform: none !important;
+        color: white;
+        text-shadow: 0 1px $dark-green !important;
+      }
+    }
+
+    .course-search .search-button {
+      background-color: $medium-blue !important;
+      border-color: $dark-blue !important;
+    }
+  }
 }

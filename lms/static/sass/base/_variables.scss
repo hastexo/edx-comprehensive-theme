@@ -1,28 +1,31 @@
 @import 'lms/static/sass/partials/base/variables';
 
+// Import color palette
+@import 'cloudify-colors';
+
 // Fonts
-$sans-serif: 'Open Sans', $verdana, sans-serif;
-$serif: $georgia;
-$header-sans-serif: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-$f-sans-serif: 'Open Sans','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$f-serif: 'Bree Serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+$sans-serif: 'Arial', 'Helvetica', sans-serif;
+$serif: $sans-serif;
+$header-sans-serif: $sans-serif;
+$f-sans-serif: $sans-serif;
+$f-serif: $sans-serif;
 
 // Colors
-$action-primary-bg: $m-blue-d3;
-$action-primary-shadow: $m-blue-d4;
-$action-primary-focused-bg: $m-blue-d1;
-$action-primary-active-bg: $m-blue;
-$action-primary-active-shadow: $m-blue-d2;
-$link-color: $uxpl-blue-base;
-$link-color-d1: $link-color;
-$link-hover: $uxpl-blue-hover-active;
-$button-color: $uxpl-blue-base;
+$action-primary-bg: $dark-blue;
+$action-primary-shadow: $medium-blue;
+$action-primary-focused-bg: $medium-blue;
+$action-primary-active-bg: $medium-blue;
+$action-primary-active-shadow: $medium-blue;
+$link-color: $dark-blue;
+$link-color-d1: $dark-blue;
+$link-hover: $medium-blue;
+$button-color: $medium-blue;
 
 // Header
-$header-bg: $white;
+$header-bg: $dirty-concrete;
 
 // Body
 $homepage-bg-image: url('#{$static-path}/images/banner.jpg');
 
 // Footer
-$footer-bg: $white;
+$footer-bg: $dirty-concrete;
