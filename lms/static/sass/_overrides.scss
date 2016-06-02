@@ -1,0 +1,76 @@
+// Import color palette
+@import 'cloudify-colors';
+
+// Overrides
+$header-bg: #323235;
+$footer-bg: #323235;
+
+// Fonts: Arial everywhere
+$sans-serif: 'Arial', 'Helvetica', sans-serif;
+$serif: $sans-serif;
+$header-sans-serif: $sans-serif;
+$f-sans-serif: $sans-serif;
+$f-serif: $sans-serif;
+
+// action - primary
+$action-primary-bg: $dark-blue;
+$action-primary-shadow: $medium-blue;
+$action-primary-focused-bg: $medium-blue;
+$action-primary-active-bg: $medium-blue;
+$action-primary-active-shadow: $medium-blue;
+
+// actions - misc
+$link-color: $dark-blue;
+$link-color-d1: $dark-blue;
+$link-hover: $medium-blue;
+$button-color: $medium-blue;
+
+// Home page
+$homepage-bg-image: url('/static/images/banner.jpg');
+
+header.global {
+  .nav-global {
+    li a, div a {
+      color: white !important;
+    }
+  }
+
+  .user .user-link {
+    color: white !important;
+  }
+}
+
+.home > header {
+  .outer-wrapper {
+    animation: none !important;
+  }
+
+  .title {
+    background: none !important;
+    > hgroup {
+      display: block !important;
+      margin-bottom: 120px !important;
+      text-align: center !important;
+
+      h1 {
+        text-transform: none !important;
+        color: white;
+        text-shadow: 0 1px $dark-green !important;
+        font-weight: bold;
+        margin-bottom: 24px !important;
+        text-align: center !important;
+      }
+
+      h2 {
+        text-transform: none !important;
+        color: white;
+        text-shadow: 0 1px $dark-green !important;
+      }
+    }
+
+    .course-search .search-button {
+      background-color: $medium-blue !important;
+      border-color: $dark-blue !important;
+    }
+  }
+}
