@@ -4,3 +4,20 @@
 .course-info .intro .heading-group h1 button {
   display: none;
 }
+
+// The HTML xmodule
+.xblock-student_view-html {
+  // Center all images
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  // hastexo XBlock theme
+  .lab_instructions {
+    height: 20em;
+    overflow-y: auto;
+    margin-bottom: 1em;
+    box-shadow: .5em .5em .5em black;
+  }
+}
