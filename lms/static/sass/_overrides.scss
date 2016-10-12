@@ -1,5 +1,8 @@
 // CSS overrides
 
+// Load code highlighter
+@import "pygments";
+
 // Disable org button
 .course-info .intro .heading-group h1 button {
   display: none;
