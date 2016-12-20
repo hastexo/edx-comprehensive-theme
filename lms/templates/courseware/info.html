@@ -77,7 +77,7 @@ from openedx.core.djangolib.markup import HTML, Text
           </div>
           % endif
 
-          <h1>${_("Course Updates and News")}</h1>
+          <h1>${_("Course Information")}</h1>
           ${HTML(get_course_info_section(request, masquerade_user, course, 'updates'))}
 
           ## CourseTalk widget
@@ -87,23 +87,10 @@ from openedx.core.djangolib.markup import HTML, Text
           </div>
           % endif
         </section>
-        <section aria-label="${_('Handout Navigation')}" class="handouts">
-          % if SelfPacedConfiguration.current().enable_course_home_improvements:
-            <h1 class="handouts-header">${_("Important Course Dates")}</h1>
-            ${HTML(get_course_date_summary(course, user))}
-          % endif
-
-          <h1 class="handouts-header">${_(course.info_sidebar_name)}</h1>
-          ${HTML(get_course_info_section(request, masquerade_user, course, 'handouts'))}
-        </section>
         % else:
         <section class="updates">
-          <h1 class="handouts-header">${_("Course Updates and News")}</h1>
+          <h1 class="handouts-header">${_("Course Information")}</h1>
           ${HTML(get_course_info_section(request, masquerade_user, course, 'guest_updates'))}
-        </section>
-        <section aria-label="${_('Handout Navigation')}" class="handouts">
-          <h1 class="handouts-header">${_("Course Handouts")}</h1>
-          ${HTML(get_course_info_section(request, masquerade_user, course, 'guest_handouts'))}
         </section>
         % endif
       </div>
