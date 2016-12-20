@@ -102,6 +102,11 @@ p,
   }
 }
 
+.course-index .accordion .course-navigation .button-chapter.active .group-heading {
+  color: inherit !important;
+  font-weight: normal !important;
+}
+
 // Remove border around SUSE logos
 .course-info .course-profile .intro-inner-wrapper .media .hero {
   border: none !important;
