@@ -1,10 +1,9 @@
 // CSS overrides
 
+@import "ubuntu/core";
+
 // Load code highlighter
 @import "pygments";
-
-// Import patterns from Ubuntu Style Guide
-@import url(http://assets.ubuntu.com/sites/guidelines/css/latest/ubuntu-styles.css);
 
 // Disable org button
 .course-info .intro .heading-group h1 button {
