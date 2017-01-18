@@ -3,10 +3,12 @@
 <%def name="online_help_token()"><% return "courseinfo" %></%def>
 <%namespace name='static' file='../static_content.html'/>
 <%!
+from datetime import datetime
+from pytz import timezone, utc
+
 from django.utils.translation import ugettext as _
 
-from courseware.courses import get_course_info_section, get_course_date_summary
-
+from courseware.courses import get_course_info_section, get_course_date_blocks
 from openedx.core.djangoapps.self_paced.models import SelfPacedConfiguration
 from openedx.core.djangolib.markup import HTML, Text
 %>
@@ -67,24 +69,24 @@ from openedx.core.djangolib.markup import HTML, Text
         % endif
       </div>
       <div class="info-wrapper">
-        % if user.is_authenticated():
+      % if user.is_authenticated():
         <section class="updates">
           % if studio_url is not None and masquerade and masquerade.role == 'staff':
-          <div class="wrap-instructor-info studio-view">
-            <a class="instructor-info-action" href="${studio_url}">
-              ${_("View Updates in Studio")}
-            </a>
-          </div>
+            <div class="wrap-instructor-info studio-view">
+              <a class="instructor-info-action" href="${studio_url}">
+                ${_("View Updates in Studio")}
+              </a>
+            </div>
           % endif
 
-          <h1>${_("Course Information")}</h1>
+          <h4>${_("Course Information")}</h4>
           ${HTML(get_course_info_section(request, masquerade_user, course, 'updates'))}
 
           ## CourseTalk widget
           % if show_coursetalk_widget:
-          <div class="coursetalk-write-reviews">
-            <div id="ct-custom-read-review-widget" data-provider="${platform_key}" data-course="${course_review_key}"></div>
-          </div>
+            <div class="coursetalk-write-reviews">
+              <div id="ct-custom-read-review-widget" data-provider="${platform_key}" data-course="${course_review_key}"></div>
+            </div>
           % endif
         </section>
         % else:
@@ -92,7 +94,11 @@ from openedx.core.djangolib.markup import HTML, Text
           <h1 class="handouts-header">${_("Course Information")}</h1>
           ${HTML(get_course_info_section(request, masquerade_user, course, 'guest_updates'))}
         </section>
-        % endif
+      % endif <!-- if course authenticated -->
       </div>
   </div>
 </main>
+
+<%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
+    DateUtilFactory.transform(iterationKey=".localized-datetime");
+</%static:require_module_async>
