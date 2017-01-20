@@ -1,5 +1,6 @@
 @import 'lms/static/sass/partials/base/variables';
 @import '../ubuntu/core-constants';
+$gutter: golden-ratio(1em, 1);
 
 // Fonts
 $sans-serif: 'Ubuntu', sans-serif;
