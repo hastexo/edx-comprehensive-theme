@@ -68,3 +68,7 @@ h5 {
   font-size: 13px !important;
   text-transform: uppercase !important;
 }
+
+.header-global .nav-global li, .header-global .nav-global div {
+  text-transform: none !important;
+}
