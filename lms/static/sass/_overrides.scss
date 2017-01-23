@@ -76,3 +76,12 @@ h5 {
 p {
   line-height: 1.5 !important
 }
+
+.header-global {
+    @extend .banner;
+    @extend .global;
+}
+
+.nav-global {
+    @extend .nav-primary;
+}
