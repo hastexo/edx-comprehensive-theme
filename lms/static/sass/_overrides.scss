@@ -3,6 +3,9 @@
 // Load code highlighter
 @import "pygments";
 
+// Load Ubuntu patterns
+@import "ubuntu/patterns/patterns";
+
 // Disable org button
 .course-info .intro .heading-group h1 button {
   display: none;
