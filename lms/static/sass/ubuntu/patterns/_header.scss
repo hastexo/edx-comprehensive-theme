@@ -14,7 +14,7 @@ header.banner {
 		margin: 0 auto;
 		overflow: hidden;
 
-		ul {
+		ol, ul {
 		  border-right: 1px solid lighten($ubuntu-orange, 10%);
 		  float: left;
 		  margin: 0;
