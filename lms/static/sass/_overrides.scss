@@ -6,6 +6,9 @@
 // Load Ubuntu patterns
 @import "ubuntu/patterns/patterns";
 
+// Import Ubuntu responsive CSS (not available as Sass)
+@import 'https://assets.ubuntu.com/v1/126653c9-global-responsive.css';
+
 // Disable org button
 .course-info .intro .heading-group h1 button {
   display: none;
