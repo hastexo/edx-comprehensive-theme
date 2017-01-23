@@ -73,6 +73,7 @@
 }
 
 // transitions
+/*
 @mixin transition($properties: all, $duration: .5s, $method: ease-out) {
     -webkit-transition: $properties $duration $method;
     -moz-transition: $properties $duration $method;
@@ -80,4 +81,5 @@
     -o-transition: $properties $duration $method;
     transition: $properties $duration $method;
 }
+*/
 // usage: @include transition(all, 0.3s, ease-in-out);
