@@ -179,8 +179,11 @@ header.header-global {
     } // nav-primary
 } // end header.banner
 
+// a.link-cta-inverted,
+// button.cta-inverted {
 a.btn-login {
-    @extend a.link-cta-inverted;
+	background: #fff;
+	color: $cool-grey;
 }
 
 // a.link-cta-ubuntu,
