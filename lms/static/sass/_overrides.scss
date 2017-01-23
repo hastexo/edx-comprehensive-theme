@@ -100,10 +100,6 @@ h5 {
   text-transform: uppercase !important;
 }
 
-.header-global .nav-global li, .header-global .nav-global div {
-  text-transform: none !important;
-}
-
 p {
   line-height: 1.5 !important
 }
@@ -111,8 +107,20 @@ p {
 .header-global {
     @extend .banner;
     @extend .global;
-}
 
-.nav-global {
-    @extend .nav-primary;
+    .nav-global {
+	@extend .banner .nav-primary;
+	text-transform: none !important;
+    }
+
+    li {
+	@extend .banner .nav-primary li;
+	a:link,
+	a:visited {
+	    @extend .banner .nav-primary li a:link;
+	}
+    }
+    li:last-child {
+	@extend .banner .nav-primary li:last-child;
+    }
 }
