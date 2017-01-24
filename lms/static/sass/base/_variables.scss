@@ -21,11 +21,11 @@ $blue-l2: tint($blue,40%);
 $blue-l3: tint($blue,60%);
 $blue-l4: tint($blue,80%);
 $blue-l5: tint($blue,90%);
-$blue-d1: shade($blue,20%);
-$blue-d2: shade($blue,40%);
-$blue-d3: shade($blue,60%);
-$blue-d4: shade($blue,80%);
-$blue-d5: shade($blue,90%);
+$blue-d1: shade($blue,10%);
+$blue-d2: shade($blue,20%);
+$blue-d3: shade($blue,30%);
+$blue-d4: shade($blue,40%);
+$blue-d5: shade($blue,50%);
 // $m-blue* is the ostensibly deprecated cousin of $blue*, but is
 // still used all over the place
 $m-blue: $blue;
@@ -39,16 +39,20 @@ $m-blue-d2: $blue-d2;
 $m-blue-d3: $blue-d3;
 $m-blue-d4: $blue-d4;
 $m-blue-d5: $blue-d5;
+// uxpl-blue* is the ostensibly default edX pattern library blue,
+// which ought to be used everywhere but isn't
+$uxpl-blue-base: $ubuntu-orange;
+$uxpl-blue-hover-active: tint($ubuntu-orange,20%);
 
-$action-primary-bg: $m-blue-d3;
-$action-primary-shadow: $m-blue-d4;
-$action-primary-focused-bg: $m-blue-d1;
-$action-primary-active-bg: $m-blue;
+$action-primary-bg: $blue-d3;
+$action-primary-shadow: $blue-d4;
+$action-primary-focused-bg: $blue-d1;
+$action-primary-active-bg: $blue;
 $action-primary-active-shadow: $m-blue-d2;
-$link-color: $ubuntu-orange;
+$link-color: $uxpl-blue-base;
 $link-color-d1: $link-color;
-$link-hover: $link-color;
-$button-color: $ubuntu-orange;
+$link-hover: $uxpl-blue-hover-active;
+$button-color: $uxpl-blue-base;
 
 // Header
 $header-bg: $white;
