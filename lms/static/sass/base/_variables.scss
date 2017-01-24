@@ -14,6 +14,32 @@ $font-regular: $font-light;
 $m-base-font-size: em(16);
 
 // Colors
+// Everything that's blue in the original, turns to Ubuntu orange
+$blue: $ubuntu-orange;
+$blue-l1: tint($blue,20%);
+$blue-l2: tint($blue,40%);
+$blue-l3: tint($blue,60%);
+$blue-l4: tint($blue,80%);
+$blue-l5: tint($blue,90%);
+$blue-d1: shade($blue,20%);
+$blue-d2: shade($blue,40%);
+$blue-d3: shade($blue,60%);
+$blue-d4: shade($blue,80%);
+$blue-d5: shade($blue,90%);
+// $m-blue* is the ostensibly deprecated cousin of $blue*, but is
+// still used all over the place
+$m-blue: $blue;
+$m-blue-l1: $blue-l1;
+$m-blue-l2: $blue-l2;
+$m-blue-l3: $blue-l3;
+$m-blue-l4: $blue-l4;
+$m-blue-l5: $blue-l5;
+$m-blue-d1: $blue-d1;
+$m-blue-d2: $blue-d2;
+$m-blue-d3: $blue-d3;
+$m-blue-d4: $blue-d4;
+$m-blue-d5: $blue-d5;
+
 $action-primary-bg: $m-blue-d3;
 $action-primary-shadow: $m-blue-d4;
 $action-primary-focused-bg: $m-blue-d1;
