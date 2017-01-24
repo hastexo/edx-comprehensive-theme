@@ -26,6 +26,7 @@ $blue-d2: shade($blue,20%);
 $blue-d3: shade($blue,30%);
 $blue-d4: shade($blue,40%);
 $blue-d5: shade($blue,50%);
+$blue-d6: shade($blue,60%);
 // $m-blue* is the ostensibly deprecated cousin of $blue*, but is
 // still used all over the place
 $m-blue: $blue;
@@ -39,6 +40,7 @@ $m-blue-d2: $blue-d2;
 $m-blue-d3: $blue-d3;
 $m-blue-d4: $blue-d4;
 $m-blue-d5: $blue-d5;
+$m-blue-d6: $blue-d6;
 // uxpl-blue* is the ostensibly default edX pattern library blue,
 // which ought to be used everywhere but isn't
 $uxpl-blue-base: $ubuntu-orange;
