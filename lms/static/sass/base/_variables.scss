@@ -21,12 +21,12 @@ $blue-l2: tint($blue,40%);
 $blue-l3: tint($blue,60%);
 $blue-l4: tint($blue,80%);
 $blue-l5: tint($blue,90%);
-$blue-d1: shade($blue,10%);
-$blue-d2: shade($blue,20%);
-$blue-d3: shade($blue,30%);
-$blue-d4: shade($blue,40%);
-$blue-d5: shade($blue,50%);
-$blue-d6: shade($blue,60%);
+$blue-d1: shade($blue,5%);
+$blue-d2: shade($blue,10%);
+$blue-d3: shade($blue,15%);
+$blue-d4: shade($blue,20%);
+$blue-d5: shade($blue,25%);
+$blue-d6: shade($blue,30%);
 // $m-blue* is the ostensibly deprecated cousin of $blue*, but is
 // still used all over the place
 $m-blue: $blue;
