@@ -101,7 +101,8 @@ header.header-global {
 	border: 0;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 0; // edx specific
+	padding: 0;   // edx specific
+	height: auto; // edx specific
 
 //      ul {
 	.nav-global {
