@@ -159,7 +159,50 @@ header.header-global {
 		font-weight: normal;  // edx specific
 	    }
 	} // end ul
+
     } // nav-primary
+    .logo {
+	border-left: 0;
+  	float: left;
+	height: 48px;
+  	overflow: hidden;
+	letter-spacing: 0;
+    }
+    
+    .logo-ubuntu {
+  	background: url("#{$asset-path}ubuntu-logo.png") no-repeat scroll 0 10px transparent;
+	font-size: 18px;
+	margin-bottom: 0;
+	position: relative;
+	text-transform: lowercase;
+	float: left;
+	margin: 0;
+	display: inline-block;
+	height: 32px;
+	min-width: 128px;
+	margin-right: -20px;
+	margin-left: 10px;
+	padding: 7px 14px 9px 0;
+	
+	img {
+	    margin-right: 8px;
+	    position: absolute;
+	    left: -999em;
+	}
+	
+	span {
+	    float: left;
+	    font-size: 23px;
+	    font-weight: 300;
+	    padding-left: 122px;
+	    padding-right: 20px;
+	    position: relative;
+	    top: 5px;
+	    color: white;
+	}
+
+    }
+
 } // end header.banner
 
 // a.link-cta-inverted,
