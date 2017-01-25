@@ -46,9 +46,11 @@ from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_
             <div role="group" aria-label="User menu" class="user-menu">
                 <ul class="dropdown-menu" aria-label="More Options" role="menu">
                     ${navigation_dropdown_menu_links()}
-                    <li class="item"><a href="${reverse('logout')}" role="menuitem" class="dropdown-menuitem">${_("Sign Out")}</a></li>
                 </ul>
             </div>
         </li>
+    </ol>
+    <ol class="right nav-courseware list-inline">
+      <li class="item"><a href="${reverse('logout')}" role="menuitem" class="btn btn-login">${_("Sign Out")}</a></li>
     </ol>
 % endif
