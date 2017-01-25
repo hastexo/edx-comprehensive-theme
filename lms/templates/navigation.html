@@ -52,14 +52,10 @@ site_status_msg = get_site_status_msg(course_id)
     <h1 class="logo">
       <a href="${marketing_link('ROOT')}">
         <%block name="navigation_logo">
-        <%
-        logo_url = get_enterprise_customer_logo_url(request)
-        logo_size = 'ec-logo-size'
-        if logo_url is None:
-            logo_url = branding_api.get_logo_url(is_secure)
-            logo_size = ''
-        %>
-            <img class="${logo_size}" src="${logo_url}" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
+	<div class="logo-ubuntu">
+	  <img width="118" height="27" src="https://assets.ubuntu.com/v1/bcc17b1c-logo-ubuntu-orange.png" alt="Ubuntu logo for print">
+	  <span>Academy</span>
+	</div>
         </%block>
       </a>
     </h1>
