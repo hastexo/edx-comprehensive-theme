@@ -108,9 +108,12 @@ h5 {
 }
 
 p {
-  line-height: 1.5 !important
+  line-height: 1.5 !important;
 }
 
+label {
+  font-weight: normal !important;
+}
 
 // header.banner {
 header.header-global {
