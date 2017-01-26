@@ -246,35 +246,8 @@ header.header-global {
 // a.link-cta-inverted,
 // button.cta-inverted {
 a.btn-login {
-	background: #fff;
-	color: $cool-grey;
-}
-
-// a.link-cta-ubuntu,
-// a.link-cta-canonical,
-// a.link-cta-inverted,
-// button.cta-ubuntu,
-// button.cta-canonical,
-a.btn,
-form button[type="submit"],
-form input[type="submit"] {
-	@include box-sizing();
-	@include font-size (16);
-	@include rounded-corners(3px);
-	background: $ubuntu-orange;
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-	margin: 0;
-	font-family: Ubuntu, Arial, 'libra sans', sans-serif;
-	font-weight: 300;
-	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-font-smoothing: subpixel-antialiased;
-	-o-font-smoothing: subpixel-antialiased;
-	font-smoothing: subpixel-antialiased;
-	padding: 8px 14px;
-	width: 100%;
-	text-align: center;
+	background: #fff !important;
+	color: $cool-grey !important;
 }
 
 .course-info .details {
