@@ -31,6 +31,16 @@
   }
 }
 
+.home {
+  > header {
+
+    .outer-wrapper {
+      animation: none !important;
+    }
+
+  }
+}
+
 // http://design.ubuntu.com/web-style-guide/typography
 
 body {
