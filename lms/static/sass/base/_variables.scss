@@ -58,7 +58,7 @@ $button-color: $uxpl-blue-base;
 
 // Header
 $header-bg: $ubuntu-orange;
-$course-header-bg: $header-bg;
+$course-header-bg: none;
 
 // Body
 $homepage-bg-image: url('#{$static-path}/images/banner.jpg');
