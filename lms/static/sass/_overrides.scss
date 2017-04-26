@@ -53,6 +53,67 @@
     }
 }
 
+.xblock-student_view-html {
+  // hastexo XBlock theme
+  .lab_instructions {
+    font-family: "Arimo", sans-serif !important;
+
+    h1 {
+      margin: 0 !important;
+      font-size: 1.5em !important;
+      font-family: "Arimo", sans-serif !important;
+    }
+
+    h2 {
+      margin-top: 2em !important;
+      color: #808080 !important;
+      font-size: 1.25em !important;
+      font-family: "Arimo", sans-serif !important;
+    }
+
+    h3 {
+      margin-top: 1.5em !important;
+      color: #808080 !important;
+      font-size: 1.1em !important;
+      font-family: "Arimo", sans-serif !important;
+      text-align: center !important;
+    }
+
+    p {
+      margin: 0 !important;
+      font-family: "Arimo", sans-serif !important;
+    }
+
+    blockquote {
+      margin: 2em 0 0 0 !important;
+      border-top: thin solid black !important;
+      border-bottom: thin solid black !important;
+      font-size: 0.85em !important;
+      font-weight: bold !important;
+      font-family: "Arimo", sans-serif !important;
+
+      p {
+        margin-top: 0.5em !important;
+      }
+
+      p:first-child {
+        margin-top: 0 !important;
+      }
+    }
+
+    pre {
+      font-family: "Anonymous Pro" !important;
+      font-weight: bold !important;
+      margin-left: 2em !important;
+    }
+
+    code {
+      font-family: "Anonymous Pro" !important;
+      color: #3465a4 !important
+    }
+  }
+}
+
 // Font overrides
 body,
 p,
