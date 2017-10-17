@@ -6,6 +6,9 @@
 // partials directly into this file so that you can break your
 // rules into modular pieces.
 
+// Import external fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 // Load code highlighter
 @import "pygments";
 
@@ -86,4 +89,125 @@
     .course-wrapper {
       border: none !important;
     }
+}
+
+// Main wrapper
+.content-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+// Header
+.global-header {
+  background: $header-bg !important;
+
+  .header-logo a .logo {
+    height: 48px;
+  }
+
+  .course-header {
+    color: $light !important;
+  }
+
+  .nav-links {
+    .main a {
+      color: $light !important;
+    }
+
+    .secondary {
+      .nav-item a,
+      .toggle-user-dropdown {
+        color: $light !important;
+      }
+
+      .dropdown-nav-item a {
+        color: $dark !important;
+      }
+
+      a.sign-in-btn, a.register-btn {
+        border-color: $header-bg !important;
+      }
+
+      a.sign-in-btn {
+        color: $inverse !important;
+
+        &:hover {
+          color: $primary !important;
+        }
+      }
+
+      a.register-btn {
+        color: $primary !important;
+
+        &:hover {
+          color: $inverse !important;
+        }
+      }
+    }
+  }
+}
+
+// Home
+.home {
+  background: $home-bg;
+
+  > header {
+    background-attachment: fixed;
+    background-color: $home-bg;
+
+    .outer-wrapper {
+      animation: none !important;
+    }
+
+    .title {
+      background: none !important;
+      > .heading-group {
+        padding-bottom: 0;
+
+        h1 {
+          text-transform: none !important;
+          color: white;
+          text-shadow: 2px 2px black !important;
+          font-weight: bold;
+          font-size: 500%;
+        }
+
+        p {
+          text-transform: none !important;
+          color: white;
+          text-shadow: 2px 2px black !important;
+          font-family: $font-family-sans-serif;
+          font-style: normal;
+        }
+      }
+    }
+  }
+
+  .courses-container {
+    padding-left: $baseline;
+    padding-right: $baseline;
+  }
+}
+
+// Course
+.course-view {
+  .course-outline {
+    h3,h4 {
+      color: $dark;
+    }
+  }
+}
+
+// Footer
+.wrapper-footer {
+  background: $footer-bg;
+
+  footer,
+  footer#footer-openedx {
+    .copyright {
+      color: $gray-600;
+      margin: -2px 0 8px;
+      font-size: 0.6875em;
+    }
+  }
 }
