@@ -239,3 +239,22 @@ a.btn-login {
         font-weight: $font-regular !important;
     }
 }
+
+// Hide nonessential items in printouts
+@media print {
+    nav,
+    button,
+    footer,
+    .sequence-nav,
+    .course-index,
+    .instructor-info-action {
+	display: none !important;
+    }
+
+    header,
+    .course-content,
+    .course-index,
+    .course-wrapper {
+	border: none !important;
+    }
+}
