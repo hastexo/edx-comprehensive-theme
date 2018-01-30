@@ -1,7 +1,7 @@
 @import 'lms/static/sass/partials/base/variables';
 
-// Import hastexo color palette
-@import 'hastexo-colors';
+// Import City Cloud color palette
+@import 'citycloud-colors';
 
 $sans-serif: 'Roboto', sans-serif;
 $serif: $sans-serif;
@@ -11,21 +11,21 @@ $f-serif: $sans-serif;
 $body-font-family: $sans-serif !important;
 
 // Colors
-$action-primary-bg: $hastexo-blue-light;
-$action-primary-shadow: $hastexo-blue-dark;
-$action-primary-focused-bg: $hastexo-blue-dark;
-$action-primary-active-bg: $hastexo-blue-dark;
-$action-primary-active-shadow: $hastexo-blue-dark;
-$link-color: $hastexo-blue-light;
-$link-color-d1: $hastexo-blue-light;
-$link-hover: $hastexo-blue-dark;
-$button-color: $hastexo-blue-dark;
+$action-primary-bg: $citycloud-blue-light;
+$action-primary-shadow: $citycloud-blue-dark;
+$action-primary-focused-bg: $citycloud-blue-dark;
+$action-primary-active-bg: $citycloud-blue-dark;
+$action-primary-active-shadow: $citycloud-blue-dark;
+$link-color: $citycloud-blue-light;
+$link-color-d1: $citycloud-blue-light;
+$link-hover: $citycloud-blue-dark;
+$button-color: $citycloud-blue-dark;
 
 // Header
-$header-bg: $hastexo-grey-medium;
+$header-bg: $citycloud-grey-medium;
 
 // Body
 $homepage-bg-image: url('#{$static-path}/images/banner.png');
 
 // Footer
-$footer-bg: $hastexo-grey-dark;
+$footer-bg: $citycloud-grey-dark;
