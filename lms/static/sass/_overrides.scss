@@ -8,6 +8,11 @@
   display: none;
 }
 
+// Disable "audit track" message
+.wrapper-auto-cert {
+  display: none;
+}
+
 // The HTML xmodule
 .xblock-student_view-html {
   // Center all images
