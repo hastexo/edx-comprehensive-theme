@@ -1,0 +1,18 @@
+<%page expression_filter="h"/>
+<%!
+from django.utils.translation import ugettext as _
+from openedx.core.djangolib.markup import HTML, Text
+%>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Contact")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>${_("Contact")}</h1>
+        <p>
+        ${Text(_("To get in touch, please feel free to drop us an email at {feedback_email}. Thank you!")).format(
+            feedback_email=HTML('<a href="mailto:{0}">{0}</a>').format(Text(settings.DEFAULT_FEEDBACK_EMAIL))
+        )}</p>
+    </section>
+</main>

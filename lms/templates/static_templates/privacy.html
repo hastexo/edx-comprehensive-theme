@@ -1,0 +1,18 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Privacy Policy")}</%block>
+
+<%block name="headextra"><meta http-equiv="refresh" content="0; url=https://www.citynetworkhosting.com/privacy-policy/" /></%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+      <h1>${_("Privacy Policy")}</h1>
+      <p>Our privacy policy is available
+      at <a href="https://www.citynetworkhosting.com/privacy-policy/">https://www.citynetworkhosting.com/privacy-policy/</a>. If
+      you are not being redirected there automatically, your browser
+      may be blocking the redirect.</p>
+    </section>
+</main>
