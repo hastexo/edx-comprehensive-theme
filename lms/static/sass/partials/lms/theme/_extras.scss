@@ -27,6 +27,22 @@
   margin: 0 auto;
 }
 
+.dashboard {
+  .main-container .my-courses .course .details {
+    .wrapper-course-image.wrapper-course-image {
+      max-height: none;
+      height: 150px;
+      .cover {
+        float: none;
+        .course-image {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
 // Format lab instructions for on-screen output
 @media screen {
   // The HTML xmodule
