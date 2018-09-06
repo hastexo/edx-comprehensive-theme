@@ -23,6 +23,20 @@ $green:     #008100;
 $teal:      #20c997;
 $cyan:      #17a2b8;
 
+// Everything that's blue in the original, turns to Ubuntu orange
+$blue: $ubuntu-orange;
+$blue-l1: tint($blue,20%);
+$blue-l2: tint($blue,40%);
+$blue-l3: tint($blue,60%);
+$blue-l4: tint($blue,80%);
+$blue-l5: tint($blue,90%);
+$blue-d1: shade($blue,5%);
+$blue-d2: shade($blue,10%);
+$blue-d3: shade($blue,15%);
+$blue-d4: shade($blue,20%);
+$blue-d5: shade($blue,25%);
+$blue-d6: shade($blue,30%);
+
 // Color assignments
 $primary:   $blue;
 $secondary: $gray-800;
@@ -38,20 +52,6 @@ $light:     $gray-200;
 $dark:      $gray-800;
 $darker:    $gray-900;
 $darkest:   $black;
-
-// Everything that's blue in the original, turns to Ubuntu orange
-$blue: $ubuntu-orange;
-$blue-l1: tint($blue,20%);
-$blue-l2: tint($blue,40%);
-$blue-l3: tint($blue,60%);
-$blue-l4: tint($blue,80%);
-$blue-l5: tint($blue,90%);
-$blue-d1: shade($blue,5%);
-$blue-d2: shade($blue,10%);
-$blue-d3: shade($blue,15%);
-$blue-d4: shade($blue,20%);
-$blue-d5: shade($blue,25%);
-$blue-d6: shade($blue,30%);
 
 // Fonts
 $font-family-sans-serif: "Ubuntu", sans-serif !default;
