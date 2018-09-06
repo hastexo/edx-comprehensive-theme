@@ -52,7 +52,11 @@ $link-color:			    $ubuntu-orange; /* This is the global link color, mainly used
 $base:					14;
 $gutter-width:	20px;
 $grid-gutter:		20px;
+
+/* Disabled for Open edX, which defines gutter in terms of em, not %
+   (and those two units are incompatible for doing arithmetic)
 $gutter:				2.12766%;
+*/
 
 $one-col:       6.38297%;
 $two-col:       14.89361%;
