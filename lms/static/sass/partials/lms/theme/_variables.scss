@@ -1,0 +1,91 @@
+// Import external fonts
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+
+// Import SUSE color palette
+@import 'suse-colors';
+
+// Colors
+$white:     #fff;
+$gray-100:  #f5f5f5;
+$gray-200:  #e7e7e7;
+$gray-300:  #d9d9d9;
+$gray-400:  #c8c8c8;
+$gray-500:  #a0a0a0;
+$gray-600:  #767676;
+$gray-700:  #414141;
+$gray-800:  #313131;
+$gray-900:  #111;
+$black:     #000;
+$blue:      #0075b4;
+$indigo:    #6610f2;
+$purple:    #6f42c1;
+$pink:      #c2387d;
+$red:       #b20610;
+$orange:    #fd7e14;
+$yellow:    #e2c01f;
+$green:     #008100;
+$teal:      #20c997;
+$cyan:      #17a2b8;
+
+$blue: $pms-274u;
+$blue-l1: lighten($blue, 2%);
+$blue-l2: lighten($blue, 4%);
+$blue-l3: lighten($blue, 6%);
+$blue-l4: lighten($blue, 8%);
+$blue-l5: lighten($blue, 10%);
+$blue-l6: lighten($blue, 12%);
+$blue-d1: darken($blue, 2%);
+$blue-d2: darken($blue, 4%);
+$blue-d3: darken($blue, 6%);
+$blue-d4: darken($blue, 8%);
+$blue-d5: darken($blue, 10%);
+$blue-d6: darken($blue, 12%);
+$blue-t0: rgba($blue,0.125);
+$blue-t1: rgba($blue,0.25);
+$blue-t2: rgba($blue,0.50);
+$blue-t3: rgba($blue,0.75);
+
+$base-font-color: $pms-2955u;
+
+// Color assignments
+$primary:   $blue;
+$secondary: $gray-800;
+$inverse:   $white;
+$disabled:  $gray-600;
+$success:   $green;
+$info:      $cyan;
+$warning:   $yellow;
+$danger:    $red;
+$purchase:  $green;
+$lightest:  $gray-100;
+$light:     $gray-200;
+$dark:      $gray-800;
+$darker:    $gray-900;
+$darkest:   $black;
+
+$action-primary-bg: $pms-7480u;
+$action-primary-shadow: $pms-7488u;
+$action-primary-focused-bg: $pms-7488u;
+$action-primary-active-bg: $pms-7488u;
+$action-primary-active-shadow: $pms-7488u;
+$link-color: $pms-7480u;
+$link-color-d1: $pms-7480u;
+$link-hover: $pms-7488u;
+$button-color: $pms-7488u;
+
+// Fonts
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+
+// Header
+$header-bg: $white;
+$header-sans-serif: $font-family-sans-serif;
+
+// Footer
+$footer-bg: #202020;
+
+// Background image
+$homepage-bg-image: url('../images/banner.jpg');
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';

@@ -1,16 +1,46 @@
-// CSS overrides
+// Theme overrides for edx.org
+//
+// The _extras.scss file is imported after all other rules by
+// the LMS Sass. For your own theme, you can override this file
+// to add any custom rules that you need. You can also import
+// partials directly into this file so that you can break your
+// rules into modular pieces.
 
 // Load code highlighter
 @import "pygments";
 
 // Disable org button
-.course-info .intro .heading-group h1 button {
+.course-info .intro .heading-group span {
   display: none;
 }
 
 // Disable "audit track" message
 .wrapper-auto-cert {
   display: none;
+}
+
+// Scale (don't crop) images in course cards
+.courses-container .courses .course .course-image .cover-image img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.dashboard {
+  .main-container .my-courses .course .details {
+    .wrapper-course-image.wrapper-course-image {
+      max-height: none;
+      height: 150px;
+      .cover {
+        float: none;
+        .course-image {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
 }
 
 // Format lab instructions for on-screen output
@@ -42,14 +72,14 @@
     .course-index,
     .instructor-info-action,
     #terminal {
-	display: none !important;
+      display: none !important;
     }
 
     header,
     .course-content,
     .course-index,
     .course-wrapper {
-	border: none !important;
+      border: none !important;
     }
 }
 
@@ -125,7 +155,7 @@ label,
 .course-content .sequence .path,
 .course-tabs li a,
 .course-navigation .button-chapter .group-heading {
-  font-family: $sans-serif;
+  font-family: $font-family-sans-serif;
 }
 
 .courseware-bookmarks-button .bookmarks-list-button {
@@ -181,3 +211,4 @@ p,
   border: none !important;
   border-bottom: none !important;
 }
+
