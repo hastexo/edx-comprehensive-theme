@@ -30,19 +30,15 @@
 <form id="login" class="login-form" tabindex="-1" method="POST">
 
     <p class="sr">
-        <% if ( context.providers.length > 0 && !context.currentProvider || context.hasSecondaryProviders ) { %>
-            <%- gettext("Sign in here using your email address and password, or use one of the providers listed below.") %>
-        <% } else { %>
-            <%- gettext("Sign in here using your email address and password.") %>
-        <% } %>
         <%- gettext("If you do not yet have an account, use the button below to register.") %>
     </p>
 
+    <% if (context.currentProvider) { %>
     <%= context.fields %>
 
     <button type="submit" class="action action-primary action-update js-login login-button"><%- gettext("Sign in") %></button>
 
-    <% if ( context.providers.length > 0 && !context.currentProvider || context.hasSecondaryProviders ) { %>
+    <% } else if ( context.providers.length > 0 || context.hasSecondaryProviders ) {  %>
     <div class="login-providers">
         <div class="section-title lines">
             <h3>
