@@ -220,3 +220,17 @@ p,
     }
   }
 }
+
+// Footer
+.wrapper-footer {
+  background: $footer-bg;
+
+  footer,
+  footer#footer-openedx {
+    .copyright {
+      color: $gray-600;
+      margin: -2px 0 8px;
+      font-size: 0.6875em;
+    }
+  }
+}
