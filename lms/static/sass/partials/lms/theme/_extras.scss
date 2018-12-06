@@ -212,3 +212,11 @@ p,
   border-bottom: none !important;
 }
 
+// Course
+.course-view {
+  .course-outline {
+    h3,h4 {
+      color: $dark;
+    }
+  }
+}
