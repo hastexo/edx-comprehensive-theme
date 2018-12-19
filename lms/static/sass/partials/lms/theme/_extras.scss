@@ -238,8 +238,8 @@ p,
 
 // Login
 .login-register .login-provider {
-  color: $link-color !important;
+  color: $link-color;
   .icon {
-    background-color: $button-color !important;
+    background-color: $button-color;
   }
 }
