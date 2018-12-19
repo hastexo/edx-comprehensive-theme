@@ -235,3 +235,11 @@ p,
     }
   }
 }
+
+// Login
+.login-register .login-provider {
+  color: $link-color !important;
+  .icon {
+    background-color: $button-color !important;
+  }
+}
