@@ -19,6 +19,11 @@
   display: none;
 }
 
+// Disable edx.org wording on account deletion tab
+.account-deletion-details .account-settings-header-subtitle {
+  display: none;
+}
+
 // Scale (don't crop) images in course cards
 .courses-container .courses .course .course-image .cover-image img {
   display: block;
